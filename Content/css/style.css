@@ -1,0 +1,194 @@
+body {
+  font-size: 0.12rem; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  height: 0.5rem;
+  background: #FF7F00;
+  position: relative; }
+  .header h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.16rem;
+    line-height: 0.5rem;
+    color: #fff; }
+  .header span {
+    position: absolute;
+    right: 0.15rem;
+    top: 0.18rem;
+    color: #fff; }
+
+.section {
+  flex: 1;
+  overflow-y: scroll;
+  background: #FAFAFA;
+  position: relative; }
+  .section .content-title {
+    position: relative;
+    height: 0.35rem;
+    width: 100%;
+    border-bottom: 0.01rem #dfdfdf solid;
+    margin-bottom: 0.1rem;
+    background: #fff; }
+    .section .content-title h3 {
+      line-height: 0.35rem;
+      font-weight: normal;
+      padding-left: 0.2rem;
+      font-size: 0.12rem; }
+      .section .content-title h3 span {
+        color: #ccc;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem; }
+      .section .content-title h3 .gary {
+        color: #666; }
+      .section .content-title h3 .red {
+        color: red; }
+    .section .content-title em {
+      position: absolute;
+      font-style: normal;
+      right: 0.15rem;
+      top: 0.08rem; }
+  .section .content-title .toggle-checkbox,
+  .section .list .toggle-checkbox {
+    width: 0.2rem;
+    height: 0.2rem;
+    float: left;
+    margin-top: 0.08rem;
+    margin-left: 0.04rem; }
+    .section .content-title .toggle-checkbox > input,
+    .section .list .toggle-checkbox > input {
+      display: none; }
+    .section .content-title .toggle-checkbox > input[type='checkbox']:checked ~ .track span,
+    .section .list .toggle-checkbox > input[type='checkbox']:checked ~ .track span {
+      background: orangered;
+      display: inline-block; }
+    .section .content-title .toggle-checkbox .track,
+    .section .list .toggle-checkbox .track {
+      width: 0.15rem;
+      height: 0.15rem;
+      display: inline-block;
+      border: 1px solid #ccc;
+      text-align: center;
+      border-radius: 50%; }
+      .section .content-title .toggle-checkbox .track .icon,
+      .section .list .toggle-checkbox .track .icon {
+        width: 0.13rem;
+        height: 0.13rem;
+        display: none;
+        border-radius: 50%;
+        margin-bottom: 0.04rem; }
+  .section .list {
+    position: relative;
+    display: flex;
+    margin-bottom: 0.1rem; }
+    .section .list .add {
+      position: absolute;
+      bottom: 0.03rem;
+      right: 0.15rem; }
+      .section .list .add input {
+        width: 0.2rem;
+        border: 0.01rem #ccc solid;
+        background: #fff;
+        text-align: center; }
+      .section .list .add span {
+        padding-left: 0.05rem;
+        padding-right: 0.05rem;
+        font-size: 0.14rem; }
+    .section .list .toggle-checkbox {
+      position: absolute;
+      left: 0.1rem;
+      top: 0.2rem; }
+    .section .list dt {
+      flex: 3;
+      margin-left: 0.4rem;
+      margin-right: 0.15rem; }
+      .section .list dt img {
+        width: 100%;
+        height: 100%; }
+    .section .list dd {
+      flex: 6; }
+      .section .list dd p {
+        line-height: 0.24rem;
+        color: #666; }
+      .section .list dd .price {
+        color: #ccc; }
+      .section .list dd .pirc em {
+        text-decoration: line-through;
+        font-size: 0.12rem;
+        font-style: normal; }
+      .section .list dd .pirc span {
+        font-size: 0.14rem;
+        color: orangered; }
+  .section .combined {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: 100%; }
+    .section .combined span {
+      padding-left: 0.1rem; }
+    .section .combined .toggle-checkbox {
+      width: 0.2rem;
+      height: 0.2rem;
+      float: left;
+      margin-top: 0.06rem;
+      margin-left: 0.04rem; }
+      .section .combined .toggle-checkbox > input {
+        display: none; }
+      .section .combined .toggle-checkbox > input[type='checkbox']:checked ~ .track span {
+        background: orangered;
+        display: inline-block; }
+      .section .combined .toggle-checkbox .track {
+        width: 0.15rem;
+        height: 0.15rem;
+        display: inline-block;
+        border: 1px solid #ccc;
+        text-align: center;
+        border-radius: 50%; }
+        .section .combined .toggle-checkbox .track .icon {
+          width: 0.13rem;
+          height: 0.13rem;
+          display: none;
+          border-radius: 50%;
+          margin-bottom: 0.04rem; }
+    .section .combined .com {
+      padding-left: 0.35rem; }
+      .section .combined .com em {
+        font-style: normal;
+        color: orangered; }
+    .section .combined .set {
+      float: right;
+      height: 100%;
+      width: 0.6rem;
+      background: orangered;
+      color: #fff; }
+      .section .combined .set strong {
+        font-weight: normal; }
+
+.footer {
+  height: 0.5rem; }
+  .footer ul {
+    display: flex;
+    border-top: 0.01rem #dfdfdf solid; }
+    .footer ul li {
+      flex: 1;
+      padding-top: 0.06rem;
+      text-align: center; }
+      .footer ul li span {
+        font-size: 0.14rem;
+        color: #3E3E3E; }
+      .footer ul li em {
+        display: block;
+        font-style: normal;
+        padding-top: 0.06rem;
+        color: #3E3E3E; }
+    .footer ul .active em, .footer ul .active span {
+      color: #FF6B02; }
+
+/*# sourceMappingURL=style.css.map */
